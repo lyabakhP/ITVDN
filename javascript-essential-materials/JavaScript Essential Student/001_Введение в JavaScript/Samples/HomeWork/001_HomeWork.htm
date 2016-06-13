@@ -5,16 +5,16 @@
 
 </head>
 <body>
-    <pre>
+<pre>
 <script>
-    var firstNumber = 3;
-    var secondNumber = 5;
-    var result = null;
-    document.writeln("3 + 5 = ", 3 + 5);
-    document.writeln("3 - 5 = ", 3 - 5);
-    document.writeln("3 * 5 = ", 3 * 5);
-    document.writeln("3 / 5 = ", 3 / 5);
+    var x = 6, y = 15, z = 4;
+    document.writeln(x += y - x++ * z);
+    document.writeln(z = --x - y * 5);
+    document.writeln(y /= x + 5 % z);
+    document.writeln(z = x++ + y * 5);
+    document.writeln(x = y - x++ * z);
+
 </script>
-         </pre>
+</pre>
 </body>
 </html>

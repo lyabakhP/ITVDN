@@ -3,65 +3,31 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
-    
+    <!--Требуется: создать массив размерностью N элементов,
+    заполнить его произвольными целыми значениями.
+    Вывести наибольшее значение массива, наименьшее значение массива,
+    общую сумму элементов, среднее арифметическое всех элементов, 
+    вывести все нечетные значения.-->
     <script type="text/javascript">
-        //var number = prompt("Ввдите размерность массива", "0");
-        //var array = [5];
-        var arr = Array(3, 5, -3, 6, 143, 7, 12, -87, 54, 32, -78, 5, 43);
-        var max = arr[0];
+        var arrayLength = prompt("Enter array length:", 0);
+        var array = Array(arrayLength);
 
-        // Поиска найбольшего значения массива
-        for (var i = 0; i < arr.length; i++) {
-            if (arr[i] > max) {
-                max = arr[i];
-            };
-        }
-        document.write("Найболшее значение массива = " + max);
-        document.write("<hr\>");
-
-        // Поиска найменьшего значения массива
-        var min = arr[0];
-        for (var i = 0; i < arr.length; i++) {
-            if (arr[i] < min) {
-                min = arr[i];
+        var myArray = prompt("Enter " + " elements of array" + array);
+        while (myArray != null) {
+            for (var i = 0; i < array.length; i++) {
+                array[i];
             }
-        };
-
-        document.write("Найменьшее значение массива = " + min);
-        document.write("<hr\>");
-
-        //Сумма всех элеменов масива
-        var summ = 0;
-        for (var i = 0; i < arr.length; i++) {
-            summ += arr[i];
+            //array = array.concat(myArray);
+            myArray = prompt("Enter " + " elements of array" + array);
         }
-
-        document.write("Сумма всех элементов массива = " + summ);
-        document.write("<hr\>");
-
-        //Среднее арифметическое
-        var summ = 0;
-        for (var i = 0; i < arr.length; i++) {
-            summ += arr[i];
-        }
-        summ = summ / arr.length;
-
-        document.write("Среднее арифметическое массива = " + summ);
-        document.write("<hr>");
-
-
-        //Все не четные значения
-        var summ = 0;
-        for (var i = 0; i < arr.length; i++) {
-            if (arr[i] % 2 != 0) {
-
-                document.write("Элемент по индексу " + i + " со значением " + arr[i] + " не четный");
-                document.write("<br\>");
-            }
-        }
-        document.write("<hr>");
         
-      
+        
+        //var myArray = prompt();
+        //while (myArray != null) {
+        //    array = array.unshift(myArray);
+        //    myArray = prompt();
+        //}
+        document.write(array);
     </script>
 
 </head>

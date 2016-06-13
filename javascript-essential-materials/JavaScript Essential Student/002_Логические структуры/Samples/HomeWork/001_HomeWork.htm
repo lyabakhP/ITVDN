@@ -2,48 +2,26 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Hello</title>
+    <title></title>
 </head>
 <body>
-    <script>
-        do {
-            var a = prompt("Enter num", "0");
-            var b = prompt("Enter num", "0");
-        } while (a > b);
-
-        var res = null;
-
-        //for (var i = +a + 1; i < b; i++) {
-        //    document.write("Number: " + i + "<br/>");
-        //    res += i;
-        //    document.write("Res" + res + "<br/>");
-        //    if (i % 2 != 0) {
-        //        document.write("Chet" + i + "<br/>");
-        //    }
-
-        var res = 0;
-        var a1 = a;
-        while (a < b) {
-            a++;
-            if (a < b) {
-                res += a;
-            }
+    <pre>
+<script>
+    var a = prompt("enter the number", "0");
+    var b = prompt("enter the number", "0");
+    var res = 0;
+    var intA = parseInt(a);
+    var intB = parseInt(b);
+    for (var i = intA + 1; i < intB; i++) {
+        res += i;
+        if (i % 2 > 0) {
+            document.writeln(i);
         }
-
-        document.write("Сумма всех чисел между " + a1 + " и " + b + " = " + res + "<br/><br/>");
-        document.write("<hr/>");
-
-        res = 0;
-        a = a1;
-
-        while (a < b) {
-
-            a++;
-
-            if (a % 2 != 0 && a < b) {
-                document.write("Не четное число: " + a + "<br/>");
-            }
-        }
-    </script>
+    }
+    document.writeln(res);
+    document.writeln(intA + intB);
+    // var
+</script>
+</pre>
 </body>
 </html>
