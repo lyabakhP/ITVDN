@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <script>
+        var width = 8;
+        var hight = 8;
+        for (var i = 0; i < hight; i++) {
+            for (var j = 0; j < width; j++) {
+                document.write("&nbsp * &nbsp");
+            }
+            document.write("<br/>");
+        }
+        document.write("<hr/>");
+        ///////////////////////////////////////////////////////////
+
+
+        for (var i = 0; i < hight; i++) {
+            for (var j = 0; j < i + 1; j++) {
+                document.write("&nbsp * &nbsp");
+            }
+            document.write("<br/>");
+        }
+        document.write("<hr/>");
+        //////////////////////////////////////////////////////////
+        var l = 0;
+        //var width = 8;
+        var hight = 8;
+        for (var i = 0; i < hight; i++) {
+
+            for (var j = 0; j < (2 * hight / 2 - i) ; j++) {
+                document.write(" &nbsp ");
+            }
+
+            for (var k = 0; k < l; k++) {
+                document.write("&nbsp * ");
+            }
+            l++;
+            document.write("<br/>");
+        }
+        document.write("<hr/>");
+        /////////////////////////////////////////////////////////
+        var l = 0;
+        //var width = 8;
+        var hight = 8;
+        for (var i = 0; i < hight; i++) {
+
+            for (var j = 0; j < (2 * hight / 2 - i) ; j++) {
+                document.write(" &nbsp&nbsp ");
+            }
+
+            for (var k = 0; k < l; k++) {
+                document.write(" &nbsp&nbsp&nbsp*");
+            }
+            l++;
+            document.write("<br/>");
+        }
+        for (var i = 0; i < hight-1; i++) {
+
+            for (var j = 0; j < (2 / hight * 2 + i) ; j++) {
+                document.write(" &nbsp&nbsp ");
+            }
+
+            for (var k = 0; k < l-1; k++) {
+                document.write(" &nbsp&nbsp&nbsp*");
+            }
+            l--;
+            document.write("<br/>");
+        }
+        document.write("<hr/>");
+    </script>
+</body>
+</html>
